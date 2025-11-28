@@ -23,7 +23,6 @@ models/sbert_cache/
 models/cache/
 
 # Dữ liệu đã xử lý (processed) và dữ liệu tạm (Tự sinh ra)
-data/processed/
 data/ground_truth.csv 
 
 # Thư mục log và hình ảnh (Nên bỏ qua, hoặc chỉ upload những hình ảnh quan trọng)
