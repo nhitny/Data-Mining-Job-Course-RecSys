@@ -1,0 +1,38 @@
+# ----------------------------------------------
+# 1. MÔI TRƯỜNG ẢO VÀ CACHE PYTHON
+# ----------------------------------------------
+venv/
+env/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.log
+.env
+
+# ----------------------------------------------
+# 2. DỮ LIỆU LỚN VÀ KẾT QUẢ TẠM THỜI (ARTEFACTS)
+# ----------------------------------------------
+# File vector SBERT (Rất nặng, không nên upload)
+models/*.npy
+models/*.bin
+models/*.pt 
+models/*.pkl
+
+# Thư mục cache model (Chứa weights đã download)
+models/sbert_cache/
+models/cache/
+
+# Dữ liệu đã xử lý (processed) và dữ liệu tạm (Tự sinh ra)
+data/processed/
+data/ground_truth.csv 
+
+# Thư mục log và hình ảnh (Nên bỏ qua, hoặc chỉ upload những hình ảnh quan trọng)
+reports/
+!reports/figures/*.png # <-- NẾU MUỐN GIỮ LẠI CÁC ẢNH BÁO CÁO CUỐI CÙNG
+
+# ----------------------------------------------
+# 3. CẤU HÌNH CỦA CÁC EDITOR (VS CODE, JUPYTER)
+# ----------------------------------------------
+.ipynb_checkpoints
+.DS_Store
+.vscode/
