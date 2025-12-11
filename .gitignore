@@ -35,3 +35,7 @@ reports/
 .ipynb_checkpoints
 .DS_Store
 .vscode/
+
+models_huggingface/
+scripts/
+tests/
